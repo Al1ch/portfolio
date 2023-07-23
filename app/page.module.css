@@ -1,9 +1,29 @@
+
+
+
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
 }
 
+.profile{
+  border-radius: 100%;
+  width: 175px;
+  height: 175px;
+}
+
+.profileContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+
+.message{
+  font: 500 0.6rem ;
+  color: white;}

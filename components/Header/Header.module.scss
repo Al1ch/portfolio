@@ -1,0 +1,44 @@
+@import 'styles/text.module.scss';
+@import 'styles/color.module.scss';
+
+.container{
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding : 0 32px ; 
+}
+
+.contactButton{
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    border : none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+.contactContainer{
+    font: $link;
+    color: $action-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+    gap: 24px;
+}
+
+
+.socialMediaContainer{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.link{
+    font: $link;
+    text-decoration: none;
+    color: $action-content;
+}
