@@ -2,7 +2,11 @@ import React from "react";
 import styles from "./SkillsCard.module.scss";
 import SkillBadge from "../SkillBadge/SkillBadge";
 
-const SkillsCard = () => {
+type Props = {
+  titleCard: string;
+};
+
+const SkillsCard = ({ titleCard }: Props) => {
   return (
     <section className={styles.container}>
       <div className={styles.stack}>
@@ -18,9 +22,10 @@ const SkillsCard = () => {
               {" "}
             </span>
           </div>
-          <h3 className={styles.titleCard}>Front-end</h3>
+          <h3 className={styles.titleCard}>{titleCard}</h3>
         </div>
         <div className={styles.badgeContainer}>
+          <SkillBadge name={"strapi "} />
           <SkillBadge name={"strapi "} />
           <SkillBadge name={"strapi "} />
           <SkillBadge name={"strapi "} />

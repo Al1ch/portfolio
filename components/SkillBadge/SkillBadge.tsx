@@ -2,7 +2,6 @@ import React from "react";
 import styles from "./SkillBadge.module.scss";
 import { StaticImageData } from "next/image";
 import ReactIcon from "@/assets/vectors/react.svg";
-import Image from "next/image";
 
 type Props = {
   name: string;
