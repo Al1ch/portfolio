@@ -8,7 +8,7 @@ type Props = {
 
 const SkillsCard = ({ titleCard }: Props) => {
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id="skills">
       <div className={styles.stack}>
         <div className={styles.headerCard}>
           <div className={styles.dotsContainer}>
