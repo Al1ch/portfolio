@@ -5,7 +5,7 @@ import MessageIcon from '../../assets/vectors/message.svg'
 
 const Header = () => {
   return (
-    <div className={styles.container}>
+    <header className={styles.container}>
       <div className={styles.contactContainer}>
         <button className={styles.contactButton}>
         <MessageIcon/>
@@ -23,7 +23,7 @@ const Header = () => {
             Hotmail
           </Link>
       </div>
-    </div>
+    </header>
   )
 }
 

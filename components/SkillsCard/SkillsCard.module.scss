@@ -1,0 +1,52 @@
+.container{
+    min-width: 300px;
+    display: flex;
+    background-color: rgb(28, 38, 57,0.5);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.stack{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+
+}
+
+.headerCard{
+    position: relative;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.dotsContainer{
+    position: absolute;
+    left: 0 ;
+    display: flex;
+    gap: 5px;
+    margin: 15px;
+}
+
+
+
+.dot{
+    height: 10px;
+    width: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.badgeContainer{
+    margin-top: 24px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 250px;
+}
