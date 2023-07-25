@@ -3,6 +3,7 @@ import styles from "./page.module.scss";
 import Header from "@/components/Header/Header";
 import profile from "../assets/photo/profile.jpg";
 import SkillsCard from "@/components/SkillsCard/SkillsCard";
+import TestimonyCard from "@/components/TestimonyCard/TestimonyCard";
 
 export default function Home() {
   return (
@@ -35,6 +36,13 @@ export default function Home() {
             <SkillsCard titleCard="Front-end" />
             <SkillsCard titleCard="Back-end" />
             <SkillsCard titleCard="Database" />
+          </div>
+        </div>
+
+        <div className={styles.testimonySection}>
+          <h2 className={styles.stackTitle}>Testimonial </h2>
+          <div className={styles.container}>
+            <TestimonyCard />
           </div>
         </div>
       </main>

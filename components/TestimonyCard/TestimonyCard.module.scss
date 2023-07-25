@@ -1,0 +1,59 @@
+@import "styles/breakpoint.module.scss";
+@import "styles/text.module.scss";
+@import "styles/color.module.scss";
+
+.container{
+    max-width: 750px;
+    min-height: 300px;
+    width: 100%;
+    background-color: #0a0a0a;
+    padding: 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 48px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.text{
+    font: $h2-text;
+    position: relative;
+    display: block;
+    &::after{
+        position: absolute;
+        width: 42px;
+        height: 3px;
+        border-radius: 8px;
+        background-color: red;
+        content: "";
+        bottom: -30px;
+        left: 50%;
+        transform: translate(-50%, 0 )
+    }
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.name{
+    font: $info-name;
+}
+
+.infoRole{
+    font: $info-role;
+    color: $role;
+}
+
+.image{
+    border-radius: 100%;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(50%);
+}
