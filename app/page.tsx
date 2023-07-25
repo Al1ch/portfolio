@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "./page.module.css";
+import styles from "./page.module.scss";
 import Header from "@/components/Header/Header";
 import profile from "../assets/photo/profile.jpg";
 import SkillsCard from "@/components/SkillsCard/SkillsCard";
@@ -26,12 +26,16 @@ export default function Home() {
             creating awesome user experiences.
           </span>
         </div>
-        <div className={styles.stackContainer}>
+        <div className={styles.stackSection}>
           <span className={styles.titleSection}>
             <h2 className={styles.stackTitle}>Skills</h2>
             <p>Some Knowledge I've gained 🙃 </p>
           </span>
-          <SkillsCard />
+          <div className={styles.stackCardContainer}>
+            <SkillsCard titleCard="Front-end" />
+            <SkillsCard titleCard="Back-end" />
+            <SkillsCard titleCard="Database" />
+          </div>
         </div>
       </main>
     </>
