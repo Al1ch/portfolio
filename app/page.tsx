@@ -4,6 +4,7 @@ import Header from "@/components/Header/Header";
 import profile from "../assets/photo/profile.jpg";
 import SkillsCard from "@/components/SkillsCard/SkillsCard";
 import TestimonyCard from "@/components/TestimonyCard/TestimonyCard";
+import TestimonySlider from "@/components/TestimonySlider/TestimonySlider";
 
 export default function Home() {
   return (
@@ -30,7 +31,7 @@ export default function Home() {
         <div className={styles.stackSection}>
           <span className={styles.titleSection}>
             <h2 className={styles.stackTitle}>Skills</h2>
-            <p>Some Knowledge I've gained 🙃 </p>
+            <p>Some Knowledge Ive gained </p>
           </span>
           <div className={styles.stackCardContainer}>
             <SkillsCard titleCard="Front-end" />
@@ -39,12 +40,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className={styles.testimonySection}>
-          <h2 className={styles.stackTitle}>Testimonial </h2>
-          <div className={styles.container}>
-            <TestimonyCard />
-          </div>
-        </div>
+        <TestimonySlider />
       </main>
     </>
   );
