@@ -11,10 +11,24 @@
 .testimonyTitle{
     font: $h2-title;
 }
+
 .testimonyContainer{
     width: 100%;
     display: flex;
-    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
     gap: 16px;
+
+
 }
+
+.sliderContainer{
+    margin: 32px auto;
+    max-width: 1010px;
+    overflow: visible;
+
+
+}
+
+
 

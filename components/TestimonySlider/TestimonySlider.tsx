@@ -5,6 +5,9 @@ import TestimonyCard from "../TestimonyCard/TestimonyCard";
 import profile from "@/assets/photo/profile.jpg";
 import Slider from "react-slick";
 import ArrowSlideButton from "@/assets/vectors/arrowLeft.svg";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import "./TestimonySlider.css";
 
 const slider = [
   {
@@ -30,17 +33,26 @@ const slider = [
   },
 ];
 
+// const settings = {
+
+//   dots: true,
+
+//   slidesToShow: 3,
+//   arrows: false,
+//   slidesToScroll: 3,
+//   nextArrow: <ArrowSlideButton direction="right" />,
+//   prevArrow: <ArrowSlideButton direction="left" />,
+// };
+
 const settings = {
-  dots: true,
+  className: "center",
+  centerMode: true,
   infinite: true,
-  speed: 500,
+  centerPadding: "120px",
   slidesToShow: 1,
-  arrows: false,
-  slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 3000,
-  nextArrow: <ArrowSlideButton direction="right" />,
-  prevArrow: <ArrowSlideButton direction="left" />,
+  speed: 500,
+  dot: true,
+  adaptiveHeight: true,
 };
 
 const TestimonySlider = () => {
@@ -50,9 +62,11 @@ const TestimonySlider = () => {
     <div className={styles.testimonySection}>
       <h2 className={styles.testimonyTitle}>Testimonial </h2>
       <div className={styles.testimonyContainer}>
-        {slider.map((slide) => (
-          <TestimonyCard key={slide.id} />
-        ))}
+        <Slider {...settings} className={styles.sliderContainer}>
+          {slider.map((slide) => (
+            <TestimonyCard key={slide.id} />
+          ))}
+        </Slider>
       </div>
     </div>
   );
