@@ -1,0 +1,25 @@
+@import 'styles/text.module.scss';
+@import 'styles/color.module.scss';
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:8px;
+    background-color: hsl(222, 53%, 7%);
+    min-height: 120px;
+    min-width: 300px;
+    border-radius: 16px;
+    padding: 16px;
+}
+
+
+.infoContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.description{
+    font: $info-role;
+    color: $role;
+}
