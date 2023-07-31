@@ -33,17 +33,6 @@ const slider = [
   },
 ];
 
-// const settings = {
-
-//   dots: true,
-
-//   slidesToShow: 3,
-//   arrows: false,
-//   slidesToScroll: 3,
-//   nextArrow: <ArrowSlideButton direction="right" />,
-//   prevArrow: <ArrowSlideButton direction="left" />,
-// };
-
 const settings = {
   className: "center",
   centerMode: true,
@@ -53,11 +42,11 @@ const settings = {
   speed: 500,
   dot: true,
   adaptiveHeight: true,
+  // nextArrow: <ArrowSlideButton direction="right" />,
+  // prevArrow: <ArrowSlideButton direction="left" />,
 };
 
 const TestimonySlider = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
-
   return (
     <div className={styles.testimonySection}>
       <h2 className={styles.testimonyTitle}>Testimonial </h2>

@@ -1,0 +1,34 @@
+@import 'styles/breakpoint.module.scss';
+@import 'styles/text.module.scss';
+
+.titleSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .stackTitle{
+    font: $h2-title;
+  }
+  
+  .stackSection{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+  }
+  
+  .stackCardContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    justify-content: center;
+  
+    @include tablet {
+      flex-wrap: wrap;
+      flex-direction: row;
+      }
+  
+  }

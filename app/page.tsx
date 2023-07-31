@@ -5,6 +5,9 @@ import profile from "../assets/photo/profile.jpg";
 import SkillsCard from "@/components/SkillsCard/SkillsCard";
 import TestimonyCard from "@/components/TestimonyCard/TestimonyCard";
 import TestimonySlider from "@/components/TestimonySlider/TestimonySlider";
+import ExperienceCard from "@/components/ExperienceCard/ExperienceCard";
+import ExperiencesSection from "@/components/ExperiencesSection/ExperiencesSection";
+import StackSection from "@/components/StackSection/StackSection";
 
 export default function Home() {
   return (
@@ -28,18 +31,8 @@ export default function Home() {
             creating awesome user experiences.
           </span>
         </div>
-        <div className={styles.stackSection}>
-          <span className={styles.titleSection}>
-            <h2 className={styles.stackTitle}>Skills</h2>
-            <p>Some Knowledge Ive gained </p>
-          </span>
-          <div className={styles.stackCardContainer}>
-            <SkillsCard titleCard="Front-end" />
-            <SkillsCard titleCard="Back-end" />
-            <SkillsCard titleCard="Database" />
-          </div>
-        </div>
-
+        <StackSection />
+        <ExperiencesSection />
         <TestimonySlider />
       </main>
     </>
