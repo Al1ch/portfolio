@@ -8,6 +8,7 @@ import ArrowSlideButton from "@/assets/vectors/arrowLeft.svg";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./TestimonySlider.css";
+import { testimonies } from "@/data/testimonies";
 
 const slider = [
   {
@@ -46,14 +47,14 @@ const settings = {
   // prevArrow: <ArrowSlideButton direction="left" />,
 };
 
-const TestimonySlider = () => {
+const TestimonySection = () => {
   return (
     <div className={styles.testimonySection}>
       <h2 className={styles.testimonyTitle}>Testimonial </h2>
       <div className={styles.testimonyContainer}>
         <Slider {...settings} className={styles.sliderContainer}>
-          {slider.map((slide) => (
-            <TestimonyCard key={slide.id} />
+          {testimonies.map((testimony) => (
+            <TestimonyCard key={testimony.id} {...testimony} />
           ))}
         </Slider>
       </div>
@@ -61,4 +62,4 @@ const TestimonySlider = () => {
   );
 };
 
-export default TestimonySlider;
+export default TestimonySection;
