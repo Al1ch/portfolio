@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./StackSection.module.scss";
 import SkillsCard from "../SkillsCard/SkillsCard";
+import { stacks } from "@/data/stacks";
 
 const StackSection = () => {
   return (
@@ -10,9 +11,9 @@ const StackSection = () => {
         <p>Some Knowledge Ive gained </p>
       </span>
       <div className={styles.stackCardContainer}>
-        <SkillsCard titleCard="Front-end" />
-        <SkillsCard titleCard="Back-end" />
-        <SkillsCard titleCard="Database" />
+        {stacks.map((stack) => (
+          <SkillsCard key={stack.id} {...stack} />
+        ))}
       </div>
     </section>
   );

@@ -2,12 +2,9 @@ import Image from "next/image";
 import styles from "./page.module.scss";
 import Header from "@/components/Header/Header";
 import profile from "../assets/photo/profile.jpg";
-import SkillsCard from "@/components/SkillsCard/SkillsCard";
-import TestimonyCard from "@/components/TestimonyCard/TestimonyCard";
-import TestimonySlider from "@/components/TestimonySlider/TestimonySlider";
-import ExperienceCard from "@/components/ExperienceCard/ExperienceCard";
 import ExperiencesSection from "@/components/ExperiencesSection/ExperiencesSection";
 import StackSection from "@/components/StackSection/StackSection";
+import TestimonySection from "@/components/TestimonySlider/TestimonySection";
 
 export default function Home() {
   return (
@@ -32,8 +29,8 @@ export default function Home() {
           </span>
         </div>
         <StackSection />
-        <ExperiencesSection />
-        <TestimonySlider />
+        <TestimonySection />
+        {/* <ExperiencesSection /> */}
       </main>
     </>
   );

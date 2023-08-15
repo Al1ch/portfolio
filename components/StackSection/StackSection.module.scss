@@ -1,6 +1,14 @@
 @import 'styles/breakpoint.module.scss';
 @import 'styles/text.module.scss';
 
+.stackSection{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+}
+
 .titleSection{
     display: flex;
     flex-direction: column;
@@ -12,13 +20,7 @@
     font: $h2-title;
   }
   
-  .stackSection{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 16px;
-    width: 100%;
-  }
+
   
   .stackCardContainer{
     display: flex;

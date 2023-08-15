@@ -1,17 +1,16 @@
 import React from "react";
 import styles from "./SkillBadge.module.scss";
-import { StaticImageData } from "next/image";
-import ReactIcon from "@/assets/vectors/react.svg";
+import { SvgComponent } from "@/types/model";
 
 type Props = {
   name: string;
-  url?: string | StaticImageData;
+  icon: SvgComponent;
 };
 
-const SkillBadge = ({ name, url }: Props) => {
+const SkillBadge = ({ name, icon: Icon }: Props) => {
   return (
     <div className={styles.container}>
-      <ReactIcon className={styles.logo} />
+      <Icon className={styles.logo} />
       <span className={styles.infoName}>{name}</span>
     </div>
   );
