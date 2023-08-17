@@ -1,0 +1,40 @@
+.profileSection{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.profile{
+    border-radius: 100%;
+    width: 175px;
+    height: 175px;
+  }
+  
+  .profileContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  
+  .message{
+    font: 500 0.6rem ;
+    color: white;
+  }
+  
+  .catchPhraseContainer{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .catchPhrase{
+    font: 500 5rem ;
+    font-size: 32px;
+    text-align: center;
+    background: -webkit-linear-gradient(1turn,#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
