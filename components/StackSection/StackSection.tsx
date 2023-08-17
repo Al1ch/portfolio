@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./StackSection.module.scss";
 import SkillsCard from "../SkillsCard/SkillsCard";
-import { stacks } from "@/data/stacks";
+import { stacks } from "@/assets/vectors/stacks";
 
 const StackSection = () => {
   return (

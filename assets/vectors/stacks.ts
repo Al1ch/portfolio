@@ -10,6 +10,11 @@ import PostgresIcon from "@/assets/vectors/postgres.svg";
 import JavascriptIcon from "@/assets/vectors/javascript.svg";
 import TypescriptIcon from "@/assets/vectors/typescript.svg";
 import PrismaIcon from "@/assets/vectors/prisma.svg";
+import DockerIcon from "@/assets/vectors/docker.svg";
+import AzureIcon from "@/assets/vectors/azure.svg";
+import FigmaIcon from "@/assets/vectors/figma.svg";
+import GitIcon from "@/assets/vectors/git.svg";
+
 
 import { SvgComponent } from "@/types/model";
 
@@ -78,6 +83,28 @@ export const stacks = [
             },{
                 name: "Prisma",
                 icon: PrismaIcon as SvgComponent,
+            }
+        ]
+    },
+    {
+        id: 4,
+        titleCard: "Tools & Other",
+        skills: [
+            {
+                name : "Docker",
+                icon: DockerIcon as SvgComponent,
+            },
+            {
+                name: "Figma",
+                icon: FigmaIcon as SvgComponent,
+            },
+            {
+                name: "Git",
+                icon: GitIcon as SvgComponent,
+            },
+            {
+                name: "Azure",
+                icon: AzureIcon as SvgComponent,
             }
         ]
     }

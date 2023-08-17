@@ -1,10 +1,9 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import styles from "./TestimonySlider.module.scss";
 import TestimonyCard from "../TestimonyCard/TestimonyCard";
 import profile from "@/assets/photo/profile.jpg";
 import Slider from "react-slick";
-import ArrowSlideButton from "@/assets/vectors/arrowLeft.svg";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./TestimonySlider.css";

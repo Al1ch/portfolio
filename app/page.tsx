@@ -2,7 +2,6 @@ import Image from "next/image";
 import styles from "./page.module.scss";
 import Header from "@/components/Header/Header";
 import profile from "../assets/photo/profile.jpg";
-import ExperiencesSection from "@/components/ExperiencesSection/ExperiencesSection";
 import StackSection from "@/components/StackSection/StackSection";
 import TestimonySection from "@/components/TestimonySlider/TestimonySection";
 
