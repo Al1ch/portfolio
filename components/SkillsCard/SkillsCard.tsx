@@ -31,10 +31,6 @@ const SkillsCard = ({ titleCard, skills }: Props) => {
           {skills.map((skill) => (
             <SkillBadge key={skill.name} icon={skill.icon} name={skill.name} />
           ))}
-          {/* <SkillBadge name={"strapi "} icon={<NextIcon />} />
-          <SkillBadge name={"strapi "} icon="" />
-          <SkillBadge name={"strapi "} icon="" />
-          <SkillBadge name={"strapi "} icon="" /> */}
         </div>
       </div>
     </section>

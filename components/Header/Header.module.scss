@@ -8,7 +8,8 @@
     align-items: center;
     justify-content: space-between;
     padding : 0 64px ; 
-    position: fixed;
+    justify-content: flex-end;
+
 }
 
 .contactButton{
@@ -45,3 +46,18 @@
     text-decoration: none;
     color: $action-content;
 }
+
+  .contact{
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    border-width: 2px;
+    border-color: grey;
+  }
+  
+  
+  .icon{
+    width: 100%;
+    height: 100%;
+  }
+  
