@@ -10,8 +10,6 @@ const Header = () => {
   return (
     <header className={styles.container}>
       <div className={styles.socialMediaContainer}>
-        <Button icon={MessageIcon} />
-
         <Link href="https://github.com/Al1ch" className={styles.contact}>
           <GithubIcon className={styles.icon} />
         </Link>
@@ -21,6 +19,7 @@ const Header = () => {
         >
           <LinkedInIcon className={styles.icon} />
         </Link>
+        <Button icon={MessageIcon} />
       </div>
     </header>
   );
