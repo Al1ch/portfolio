@@ -1,10 +1,11 @@
 @import 'styles/text.module.scss';
+@import 'styles/breakpoint.module.scss';
 
 .testimonySection{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 16px;
+    gap: 64px;
     width: 100%;
   }
 
@@ -13,11 +14,19 @@
 }
 
 .testimonyContainer{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 16px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 0 32px;
+    @include desktop{
+      flex-wrap: nowrap;
+  }
+ 
 }
 
 .sliderContainer{
@@ -25,5 +34,3 @@
     max-width: 1010px;
     overflow: visible;
 }
-
-

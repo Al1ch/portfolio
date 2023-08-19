@@ -8,7 +8,7 @@ const StackSection = () => {
     <section className={styles.stackSection}>
       <span className={styles.titleSection}>
         <h2 className={styles.stackTitle}>Skills</h2>
-        <p>Some Knowledge Ive gained </p>
+        <p>Some Knowledge I have gained </p>
       </span>
       <div className={styles.stackCardContainer}>
         {stacks.map((stack) => (

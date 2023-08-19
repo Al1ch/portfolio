@@ -3,8 +3,10 @@
 @import "styles/color.module.scss";
 
 .container{
-    max-width: 750px;
     min-height: 300px;
+
+    max-width: 600px;
+    min-width:375px; 
     width: 100%;
     background-color: #0a0a0a;
     padding: 64px;
@@ -19,21 +21,21 @@
     
 }
 
+.content{
+    display: flex;
+    flex-direction: column;
+    min-height: 180px;
+    gap: 32px;
+    justify-content: space-between;
+
+}
+
 .text{
     font: $h2-text;
     position: relative;
     display: block;
-    &::after{
-        position: absolute;
-        width: 36px;
-        height: 3px;
-        border-radius: 8px;
-        background-color: red;
-        content: "";
-        bottom: -30px;
-        left: 50%;
-        transform: translate(-50%, 0 )
-    }
+    line-height: 24px;
+
 }
 
 .profile{
@@ -41,6 +43,18 @@
     flex-direction: column;
     align-items: center;
     gap: 8px;
+    position: relative;
+        &::after{
+        position: absolute;
+        width: 36px;
+        height: 3px;
+        border-radius: 8px;
+        background-color: rgba(255, 0, 0, 0.708);
+        content: "";
+        top: -15px;
+        left: 50%;
+        transform: translate(-50%, 0 )
+    }
 }
 
 .name{
