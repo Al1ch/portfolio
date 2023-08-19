@@ -3,59 +3,44 @@
 @import "styles/color.module.scss";
 
 .container{
-    max-width: 750px;
-    min-height: 300px;
-    width: 100%;
-    background-color: #0a0a0a;
-    padding: 64px;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 48px;
-    position: relative;
-    border-radius: 10px;
-    
-}
-
-.text{
-    font: $h2-text;
-    position: relative;
-    display: block;
-    &::after{
-        position: absolute;
-        width: 36px;
-        height: 3px;
-        border-radius: 8px;
-        background-color: red;
-        content: "";
-        bottom: -30px;
-        left: 50%;
-        transform: translate(-50%, 0 )
-    }
+    justify-content: space-between;
+    gap: 32px;
+    max-width: 1100px;
+    min-height: 150px;
+    background-color: $card-color;
+    padding: 16px;
+    border-radius: 8px;
 }
 
 .profile{
     display: flex;
-    flex-direction: column;
     align-items: center;
+    gap: 16px;
+}
+
+.image{
+    border-radius: 100%;
+
+}
+
+.profileInfo{
+    min-width: 175px;
+    display: flex;
     gap: 8px;
+    flex-direction: column;
 }
 
 .name{
     font: $info-name;
 }
 
-.infoRole{
+.role{
     font: $info-role;
-    color: $role;
+    color: $role
 }
 
-.image{
-    border-radius: 100%;
-    position: absolute;
-    bottom: 0;
-    transform: translateY(50%);
-    z-index: 10;
+.testimony{
+    font: $footer-text;
 }

@@ -1,0 +1,20 @@
+@import 'styles/text.module.scss';
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+    width: 100%;
+  }
+
+.testimonyTitle{
+    font: $h2-title;
+}
+
+.testimonySection{
+  display: flex;
+  align-items: center;
+  gap: 42px;
+  flex-direction: column;
+}
