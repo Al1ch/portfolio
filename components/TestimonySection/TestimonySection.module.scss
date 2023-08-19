@@ -1,6 +1,7 @@
 @import 'styles/text.module.scss';
+@import 'styles/breakpoint.module.scss';
 
-.container{
+.testimonySection{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,9 +13,24 @@
     font: $h2-title;
 }
 
-.testimonySection{
+.testimonyContainer{
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  width: 100%;
   align-items: center;
-  gap: 42px;
-  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  padding: 0 32px;
+    @include desktop{
+      flex-wrap: nowrap;
+  }
+ 
+}
+
+.sliderContainer{
+    margin: 32px auto;
+    max-width: 1010px;
+    overflow: visible;
 }

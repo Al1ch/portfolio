@@ -1,17 +1,16 @@
 "use client";
 import React from "react";
-import profile from "@/assets/photo/profile.jpg";
-import { testimonies } from "@/data/testimonies";
 import styles from "./TestimonySection.module.scss";
 import TestimonyCard from "../TestimonyCard/TestimonyCard";
+import { testimonies } from "@/data/testimonies";
 
 const TestimonySection = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.testimonySection}>
       <h2 className={styles.testimonyTitle}>Testimonies </h2>
-      <div className={styles.testimonySection}>
+      <div className={styles.testimonyContainer}>
         {testimonies.map((testimony) => (
-          <TestimonyCard {...testimony} key={testimony.id} />
+          <TestimonyCard key={testimony.id} {...testimony} />
         ))}
       </div>
     </div>

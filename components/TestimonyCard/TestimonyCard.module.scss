@@ -3,44 +3,73 @@
 @import "styles/color.module.scss";
 
 .container{
+    min-height: 300px;
+
+    max-width: 600px;
+    min-width:375px; 
+    width: 100%;
+    background-color: #0a0a0a;
+    padding: 64px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    text-align: center;
+    gap: 48px;
+    position: relative;
+    border-radius: 10px;
+    
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    min-height: 180px;
     gap: 32px;
-    max-width: 1100px;
-    min-height: 150px;
-    background-color: $card-color;
-    padding: 16px;
-    border-radius: 8px;
+    justify-content: space-between;
+
+}
+
+.text{
+    font: $h2-text;
+    position: relative;
+    display: block;
+    line-height: 24px;
+
 }
 
 .profile{
     display: flex;
-    align-items: center;
-    gap: 16px;
-}
-
-.image{
-    border-radius: 100%;
-
-}
-
-.profileInfo{
-    min-width: 175px;
-    display: flex;
-    gap: 8px;
     flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+        &::after{
+        position: absolute;
+        width: 36px;
+        height: 3px;
+        border-radius: 8px;
+        background-color: rgba(255, 0, 0, 0.708);
+        content: "";
+        top: -15px;
+        left: 50%;
+        transform: translate(-50%, 0 )
+    }
 }
 
 .name{
     font: $info-name;
 }
 
-.role{
+.infoRole{
     font: $info-role;
-    color: $role
+    color: $role;
 }
 
-.testimony{
-    font: $footer-text;
+.image{
+    border-radius: 100%;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(50%);
+    z-index: 10;
 }

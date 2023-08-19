@@ -12,20 +12,22 @@ type Props = {
 const TestimonyCard = ({ name, role, testimony, profile }: Props) => {
   return (
     <div className={styles.container}>
-      <div className={styles.profile}>
-        <Image
-          src={profile}
-          alt="profileTestimony"
-          className={styles.image}
-          width={75}
-          height={75}
-        />
-        <div className={styles.profileInfo}>
-          <p className={styles.name}>{name}</p>
-          <p className={styles.role}>{role}</p>
+      <div className={styles.content}>
+        <div className={styles.testimony}>
+          <p className={styles.text}>{testimony}</p>
+        </div>
+        <div className={styles.profile}>
+          <h3 className={styles.name}>{name}</h3>
+          <p className={styles.infoRole}> {role} </p>
         </div>
       </div>
-      <div className={styles.testimony}>{testimony}</div>
+      <Image
+        src={profile}
+        alt={""}
+        width={100}
+        height={100}
+        className={styles.image}
+      />
     </div>
   );
 };
