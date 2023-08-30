@@ -7,7 +7,7 @@ export const testimonies = [
         id: 1,
         name: "Matthieu Geissman",
         role: "Website Performance Associate at Doctolib",
-        testimony:"I had the opportunity to collaborate with Alain on various topics, bridging technological challenges and business aspects. I especially appreciated his drive to move forward, and his ability to find solutions. Hoping our paths cross again !",
+        testimony:"I had the opportunity to collaborate with Alain on various topics, bridging technological challenges and business aspects. I especially appreciated his ability to find solutions. Hoping our paths cross again !",
         profile: matthieuImage,
     },{
         id: 2,
@@ -19,7 +19,7 @@ export const testimonies = [
         id: 3,
         name: "Valentin Lemains",
         role: "Cloud Architect at Oracle",
-        testimony: "Working with Alain is an absolute pleasure. His positive approach and innate curiosity light up our team. Alain fully engages in his work, and his constant desire for self-improvement speaks to his dedication. He combines competence and personality",
+        testimony: "Working with Alain is an absolute pleasure. His positive approach and innate curiosity light up our team. His constant desire for self-improvement speaks to his dedication. He combines competence and personality",
         profile: valentinImage,
     }
     
