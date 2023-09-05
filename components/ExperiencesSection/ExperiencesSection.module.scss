@@ -3,33 +3,25 @@
 @import 'styles/text.module.scss';
 
 .experiencesSection{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 64px;
-    width: 100%;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+  width: 100%;
+  max-width: 1350px;
+}
   
 .experiencesContainer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    width: 200vw;
-    position: relative;
-    gap: 16px;
-  }
-  
-  .title{
-    font: $h2-title;
-  }
+  display: flex;
+  padding-bottom: 32px;
+  overflow-x: scroll;
+  width: 100%;
+  align-self: center;
+}
 
 
-  .lineContainer{
-    position: fixed;
-    width: 100%;
-    height: 100%;
-  }
+.title{
+  font: $h2-title;
+}
 
 
