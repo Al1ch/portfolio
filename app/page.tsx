@@ -1,3 +1,4 @@
+import ExperiencesSection from "@/components/ExperiencesSection/ExperiencesSection";
 import styles from "./page.module.scss";
 import Header from "@/components/Header/Header";
 import ProfileSection from "@/components/ProfileSection/ProfileSection";
@@ -11,8 +12,8 @@ export default function Home() {
       <main className={styles.main}>
         <ProfileSection />
         <StackSection />
+        <ExperiencesSection />
         <TestimonySection />
-        {/* <ExperiencesSection /> */}
       </main>
     </>
   );
