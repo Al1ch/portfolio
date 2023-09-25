@@ -25,7 +25,7 @@ export const experiences = [
         date: "2021 - 2022"
     },      
     {
-        title: 'Front End Developer Consultant',
+        title: 'Front End Developer',
         company: 'Sogeti Part of Capgemini',
         logo: CapgeminiIcon,
         date: "2022 - 2024"
