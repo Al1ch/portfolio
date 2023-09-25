@@ -4,6 +4,7 @@ import Header from "@/components/Header/Header";
 import ProfileSection from "@/components/ProfileSection/ProfileSection";
 import StackSection from "@/components/StackSection/StackSection";
 import TestimonySection from "@/components/TestimonySection/TestimonySection";
+import ProjectSection from "@/components/ProjectSection/ProjectSection";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <StackSection />
         <ExperiencesSection />
         <TestimonySection />
+        <ProjectSection />
       </main>
     </>
   );
