@@ -21,10 +21,11 @@
   width: 100%;
   align-items: center;
   justify-content: center;
-  gap: 16px;
+  gap: 72px;
   padding: 0 32px;
     @include desktop{
       flex-wrap: nowrap;
+      gap: 16px;
   }
  
 }
