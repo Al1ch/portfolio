@@ -2,22 +2,21 @@ import React, { ButtonHTMLAttributes } from "react";
 import styles from "./Button.module.scss";
 import Link from "next/link";
 import { SvgComponent } from "@/types/model";
+import cn from "classnames";
 
 type Props = ButtonHTMLAttributes<HTMLButtonElement> & {
   disable?: boolean;
   onClick?: () => void;
-  color?: string;
-  label?: string;
-  icon?: SvgComponent;
+  size: "sm" | "md" | "lg";
+  color?: "primary" | "secondary" | "white";
+  radius?: "circle" | "rounded";
+  children: React.ReactNode;
 };
 
-const Button = ({ label, color = "white", icon: Icon }: Props) => {
+const Button = ({ children, color = "white", radius = "rounded" }: Props) => {
   return (
-    <button className={styles.button}>
-      <Link href="mailto:alain.chea@efrei.net" className={styles.link}>
-        {Icon && <Icon />}
-        {label}
-      </Link>
+    <button className={cn(styles.button, styles[color], styles[radius])}>
+      {children}
     </button>
   );
 };
