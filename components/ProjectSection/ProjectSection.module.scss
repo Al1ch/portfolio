@@ -1,16 +1,31 @@
 @import "styles/breakpoint.module.scss";
+@import "styles/text.module.scss";
+
 .container{
     display: flex;
     width: 100%;
+    max-width: 2000px;
     padding: 32px;
     align-self: center;
     flex-direction: column;
-    gap: 32px;
+    gap: 64px;
     @mixin laptop{
         padding: 64px;
     }
 }
 
+
+.projectList{
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    width: 100%;
+    >:nth-child(2n){
+        flex-direction: row-reverse;
+    }
+}
+
 .title{
     align-self: center;
+    font: $h2-title;
 }

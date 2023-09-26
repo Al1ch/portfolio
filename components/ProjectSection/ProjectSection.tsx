@@ -7,9 +7,11 @@ const ProjectSection = () => {
   return (
     <div className={styles.container}>
       <h2 className={styles.title}> Some Project </h2>
-      {projects.map((project) => (
-        <ProjectDetails key={project.id} {...project} />
-      ))}
+      <div className={styles.projectList}>
+        {projects.map((project) => (
+          <ProjectDetails key={project.id} {...project} />
+        ))}
+      </div>
     </div>
   );
 };
