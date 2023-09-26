@@ -1,19 +1,19 @@
 @import "styles/effect.module.scss";
-
+@import "styles/text.module.scss";
 .container{
     min-height: 300px;
     width: 100%;
     display: flex;
-    justify-content: space-between;
-    gap: 24px;
+    gap: 48px;
 }
 
 .preview{
     display: flex;
     align-items: center;
-    max-width: 750px;
+    max-width: 50%;
     max-height: 300px;
     position: relative;
+
 }
 
 .image{
@@ -31,11 +31,13 @@
     cursor: pointer;
     flex-direction: column;
     justify-content: flex-end;
+    align-items: flex-start;
     position: absolute;
     top: 0;
-    transition: ease-in-out 0.25s;
+    transition: ease-in-out 0.2s;
+    background-color: rgba(0, 0, 0, 0.2);
     &:hover{
-        background-color: rgba(0, 0, 0, 0.4);
+        background-color: rgba(0, 0, 0, 0.5);
     }
 
     &:hover .detailsProjectImage{
@@ -43,11 +45,15 @@
         opacity: 1;
     }
     &:hover .header{
-        transition: ease-in-out 0.3s;
+        transition: ease-in-out 0.2s;
         transform: translateY(-150%);
 
     }
     padding: 48px;
+}
+
+.role{
+    font: $info-name ;
 }
 
 
@@ -55,7 +61,6 @@
 .header{
     display: flex;
     gap: 8px;
-    display: flex;
     flex-direction: column;
     position: absolute;
 }
@@ -66,12 +71,22 @@
     transition: opacity 0.8s ease;
 }
 
+.titleProject{
+    font: $h3-title;
+}
 
 .projectInfo{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 16px;
-    align-self: flex-start;
+    gap: 32px;
+    align-self: center;
+}
+
+.projectTitle{
+    font: $h4-title;
+}
+
+.details{
+    font: $h1-text;
 }
 

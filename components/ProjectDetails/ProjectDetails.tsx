@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./ProjectDetails.module.scss";
 import Image, { StaticImageData } from "next/image";
+import Button from "@/components/Button/Button";
 
 type Props = {
   cardInfo: {
@@ -30,7 +31,12 @@ const ProjectDetails = ({ cardInfo, description, title, image }: Props) => {
       </div>
       <div className={styles.projectInfo}>
         <h3 className={styles.titleProject}>{title}</h3>
-        <div className={styles.details}>{description}</div>
+        <span className={styles.details}>{description}</span>
+        <div className={styles.stackList}>
+          <Button size={"md"} color={"secondary"}>
+            <span>Next.js</span>
+          </Button>
+        </div>
       </div>
     </div>
   );

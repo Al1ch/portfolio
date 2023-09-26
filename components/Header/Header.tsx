@@ -19,7 +19,11 @@ const Header = () => {
         >
           <LinkedInIcon className={styles.icon} />
         </Link>
-        <Button icon={MessageIcon} />
+        <Button size={"sm"}>
+          <Link href="mailto:alain.chea@efrei.net" className={styles.link}>
+            {<MessageIcon />}
+          </Link>
+        </Button>
       </div>
     </header>
   );
