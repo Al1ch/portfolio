@@ -11,11 +11,13 @@ export default function Home() {
     <>
       <Header />
       <main className={styles.main}>
-        <ProfileSection />
-        <StackSection />
-        <ExperiencesSection />
-        <TestimonySection />
-        <ProjectSection />
+        <div className={styles.body}>
+          <ProfileSection />
+          <StackSection />
+          <ExperiencesSection />
+          <TestimonySection />
+          <ProjectSection />
+        </div>
       </main>
     </>
   );
