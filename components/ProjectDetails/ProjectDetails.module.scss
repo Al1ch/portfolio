@@ -46,7 +46,7 @@
     }
     &:hover .header{
         transition: ease-in-out 0.2s;
-        transform: translateY(-150%);
+        transform: translateY(-200%);
 
     }
     padding: 48px;
@@ -56,6 +56,11 @@
     font: $info-name ;
 }
 
+.icon{
+    height: 32px;
+    width: 32px;
+
+}
 
 
 .header{
@@ -90,3 +95,11 @@
     font: $h1-text;
 }
 
+.stack{
+    font: $info-name
+}
+
+.stackList{
+    display: flex;
+    gap: 16px;
+}

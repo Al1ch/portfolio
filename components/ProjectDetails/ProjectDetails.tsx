@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./ProjectDetails.module.scss";
 import Image, { StaticImageData } from "next/image";
-import Button from "@/components/Button/Button";
+import { SvgComponent } from "@/types/model";
 
 type Props = {
   cardInfo: {
@@ -12,9 +12,16 @@ type Props = {
   description: string;
   title: string;
   image: string | StaticImageData;
+  stacks: { name: string; icon: SvgComponent }[];
 };
 
-const ProjectDetails = ({ cardInfo, description, title, image }: Props) => {
+const ProjectDetails = ({
+  cardInfo,
+  description,
+  title,
+  image,
+  stacks,
+}: Props) => {
   return (
     <div className={styles.container}>
       <div className={styles.preview}>
@@ -33,9 +40,9 @@ const ProjectDetails = ({ cardInfo, description, title, image }: Props) => {
         <h3 className={styles.titleProject}>{title}</h3>
         <span className={styles.details}>{description}</span>
         <div className={styles.stackList}>
-          <Button size={"md"} color={"secondary"}>
-            <span>Next.js</span>
-          </Button>
+          {stacks.map((stack, index) => (
+            <stack.icon key={index} className={styles.icon} />
+          ))}
         </div>
       </div>
     </div>
