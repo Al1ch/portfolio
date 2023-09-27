@@ -18,7 +18,7 @@
 .projectList{
     display: flex;
     flex-direction: column;
-    gap: 64px;
+    gap: 72px;
     width: 100%;
     >:nth-child(2n){
         flex-direction: row-reverse;

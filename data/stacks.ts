@@ -24,11 +24,11 @@ export const stacks = [
       titleCard: "Front-end",
       skills: [
         {
-          name: "React",
+          name: "React.js",
           icon : ReactIcon as SvgComponent,
         },
         {
-          name: "Next",
+          name: "Next.js",
           icon: NextIcon as SvgComponent,
         },
         {
