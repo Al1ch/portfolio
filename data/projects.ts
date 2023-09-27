@@ -43,12 +43,12 @@ export const projects = [
     {
         id:2,
         cardInfo:{
-            title: "Sogetilab Website",
+            title: "Sogetilabs Website",
             role: "Full Stack Developer",
             description : "SogetiLabs is Capgemini's innovation hub, where we partner with clients on cutting-edge, tech-driven projects, applying the latest technologies and best practices"
         },
         title: "Sogetilabs Website",
-        description: "I was tasked with implementing the website using Next.js' Static Site Generation. Additionally, I introduced Incremental Static Generation and linked it with a headless CMS, Strapi.",
+        description: "I was tasked with implementing the website using Next.js' Static Site Generation. Additionally, I introduced Incremental Static Generation (ISG) and integrated it with a headless CMS, Strapi, to enhance performance and SEO.",
         image: projectImage,
         stacks: [
             {
